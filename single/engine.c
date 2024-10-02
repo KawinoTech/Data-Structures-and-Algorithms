@@ -19,7 +19,9 @@ int engine(void)
 	"\n4. Insert new node at the end"
 	"\n5. Check all list items"
 	"\n6. Delete node at the beginning"
-	"\n7. Quit program\n\n";
+	"\n7. Delete node at the end"
+	"\n8. Reverse list"
+	"\n9. Quit program\n\n";
 	iterate = true;
 	head = NULL;
 	while (iterate)

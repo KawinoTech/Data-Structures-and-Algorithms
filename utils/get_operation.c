@@ -19,10 +19,12 @@ int (*get_op_func(int choice))(Student **head)
 		{4, list_pop},
 		{5, print_list},
 		{6, del_begin},
-		{7, free_list},
+		{7, del_end},
+		{8, reverse_list},
+		{9, free_list}
 	};
 	i = 0;
-	while (i < 7)
+	while (i < 9)
 	{
 		if (choice == ops[i].input)
 		{

@@ -25,6 +25,8 @@ int list_push(Student **head);
 int list_pop(Student **head);
 int insert_n(Student **head);
 int del_begin(Student **head);
+int del_end(Student **head);
+int reverse_list(Student **head);
 
 int link_stack_push(char *name, int age, char *gender, Student **top);
 int (*get_op_func(int choice))(Student **head);

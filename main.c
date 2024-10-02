@@ -49,7 +49,7 @@ int main(void)
 		{
 			link_stack_engine();
 		}
-		else if (strcmp(choice, "5") == 0)
+		else if (strcmp(choice, "6") == 0)
 		{
 			printf("Exit\nGoodbye\n");
 			free(choice);
