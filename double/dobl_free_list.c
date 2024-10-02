@@ -6,16 +6,19 @@
  * Return: 0 void
  */
 
-void dobl_free_list(Teacher *head)
+int dobl_free_list(Teacher **head)
 {
 	Teacher *temp;
 
-	while (head != NULL)
+	while (*head != NULL)
 	{
-		temp = head;
-		head = head->next;
+		temp = *head;
+		*head = (*head)->next;
 		free(temp->name);
 		free(temp->gender);
 		free(temp);
 	}
+	printf("\nList freed\n");
+	*head = NULL;
+	return (2);
 }

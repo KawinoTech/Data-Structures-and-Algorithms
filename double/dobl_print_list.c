@@ -6,18 +6,23 @@
  * Return: the number of nodes printed
  */
 
-size_t dobl_print_list(Teacher *h)
+int dobl_print_list(Teacher **head)
 {
 	Teacher *temp;
-	size_t i;
+	int i;
 
-	temp = h;
+	temp = *head;
 	i = 1;
+	if (temp == NULL)
+	{
+		printf("List is empty\n");
+		return (0);
+	}
 	while (temp->next != NULL)
 	{
-	printf("\nTeacher %lu Data\nName: %s\nAge: %d\nGender: %s\n",
+	printf("\nTeacher %d Data\nName: %s\nAge: %d\nGender: %s\n",
 	i, temp->name, temp->age, temp->gender);
-	printf("      ^  |\n  ");
+	printf("     ^  |\n  ");
 	printf("   |  |\n  ");
 	printf("   |  |\n  ");
 	printf("   |  |\n  ");
@@ -26,7 +31,7 @@ size_t dobl_print_list(Teacher *h)
 	i++;
 	temp = temp->next;
 	}
-	printf("\nTeacher %lu Data\nName: %s\nAge: %d\nGender: %s\n",
+	printf("\nTeacher %d Data\nName: %s\nAge: %d\nGender: %s\n",
 	i, temp->name, temp->age, temp->gender);
 	return (i);
 

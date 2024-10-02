@@ -1,17 +1,16 @@
 #include "dobl_main.h"
 /**
  * new_list - creates first node to the list(doubly linked)
- * @name: name of the Student
- * @age: age of the Student
- * @gender: gender of the Student
  * @head: head to the linked list
  *
  * Return: 0 (Success)
  * or 1 (Error)
  */
 
-int dobl_new_list(char *name, int age, char *gender, Teacher **head)
+int dobl_new_list(Teacher **head)
 {
+	char name[20], gender[10];
+	int age;
 	Teacher *new_node = (Teacher *) malloc(sizeof(Teacher));
 
 	if (new_node == NULL)
@@ -19,6 +18,7 @@ int dobl_new_list(char *name, int age, char *gender, Teacher **head)
 		printf("Error\n");
 		return (1);
 	}
+	prompt(name, &age, gender);
 	new_node->name = strdup(name);
 	new_node->age = age;
 	new_node->gender = strdup(gender);
