@@ -24,5 +24,7 @@ int dobl_list_push(Teacher **head);
 int dobl_list_pop(Teacher **head);
 int dobl_print_list(Teacher **head);
 int dobl_free_list(Teacher **head);
+int dobl_insert_n(Teacher **head);
+int dobl_reverse_list(Teacher **head);
 int (*dobl_get_op_func(int choice))(Teacher **head);
 #endif

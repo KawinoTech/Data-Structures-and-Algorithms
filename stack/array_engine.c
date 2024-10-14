@@ -116,6 +116,3 @@ int stack_array_engine(void)
     	free(no_of_elements);
     	return(0);
 }
-
-		
-	

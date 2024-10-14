@@ -19,7 +19,8 @@ int doblengine(void)
 	"\n3. Insert new node at position n"
 	"\n4. Insert new node at the end"
 	"\n5. Check all list items"
-	"\n6. Quit program\n\n";
+	"\n6. Reverse list\n"
+	"\n7. Quit program\n\n";
 
 	iterate = true;
 	head = NULL;

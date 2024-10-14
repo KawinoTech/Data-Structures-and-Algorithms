@@ -1,6 +1,7 @@
 #include "main.h"
 #include "dobl_main.h"
 #include "stack.h"
+#include "queue.h"
 #include "link_stack.h"
 #include <stdbool.h>
 /**
@@ -27,8 +28,9 @@ int main(void)
 		printf("2. Doubly Linked Lists\n");
 		printf("3. Stacks(Array)\n");
 		printf("4. Stacks(Linked Lists)\n");
-		printf("5. Queue(Linked Lists)\n");
-		printf("6. Exit Program\n");
+		printf("5. Queue(Array)\n");
+		printf("6. Queue(Linked Lists)\n");
+		printf("7. Exit Program\n");
 		if (string_input_validator(&choice, &len) == 0)
 		{
 			continue;
@@ -48,6 +50,10 @@ int main(void)
 		else if (strcmp(choice, "4") == 0)
 		{
 			link_stack_engine();
+		}
+		else if (strcmp(choice, "5") == 0)
+		{
+			queue_array_engine();
 		}
 		else if (strcmp(choice, "6") == 0)
 		{
